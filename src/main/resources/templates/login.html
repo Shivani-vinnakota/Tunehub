@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>LOGIN</title>
+<link rel="stylesheet" type="text/css" th:href="@{/login.css}">
 </head>
 <body>
-<h1>User LOGIN: </h1>
-<form action="validate" method="post">
-	<label>Email : </label>
-	<input type="text" name="email"/>
-	<br>
-	<label>Password : </label>
-	<input type="password" name="password"/>
-	<br>
-	<input type="submit" value="LOGIN"/>
-</form>
+<div id="box">
+	<form action="validate" method="post">
+		<h2>USER LOGIN</h2>
+		
+		<label><b>Email:</b></label><br> 
+		<input type="email" name="email"><br><br>
+		
+		<label><b>Password:</b></label><br>
+		<input type="password" name="password"><br><br>
+		
+		<input type="submit" value="LOGIN" id="log">
+	</form>
+	</div>
 </body>
 </html>
